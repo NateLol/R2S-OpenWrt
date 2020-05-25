@@ -85,6 +85,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-wrtbwmon
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-netdata package/lean/luci-app-netdata
 #文件上传
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-filetransfer package/lean/luci-app-filetransfer
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-app-filetransfer
 #访问控制
 git clone -b openwrt-19.07 https://github.com/natelol/luci-app-beardropper package/new/luci-app-beardropper
 #OpenClash
