@@ -5,6 +5,7 @@ wget https://raw.githubusercontent.com/openwrt/openwrt/openwrt-19.07/feeds.conf.
 #remove annoying snapshot tag
 sed -i 's,SNAPSHOT,,g' include/version.mk
 sed -i 's,snapshots,,g' package/base-files/image-config.in
+echo "src-git natelol https://github.com/natelol/natelol.git" >> feeds.conf.default
 #更新feed
 ./scripts/feeds update -a && ./scripts/feeds install -a
 #arpbind
@@ -87,7 +88,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-netdata 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-filetransfer package/lean/luci-app-filetransfer
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 #访问控制
-git clone -b openwrt-19.07 --single-branch https://github.com/natelol/luci-app-beardropper package/new/luci-app-beardropper
+#git clone -b openwrt-19.07 --single-branch https://github.com/natelol/luci-app-beardropper package/new/luci-app-beardropper
 #OpenClash
 #svn co https://github.com/vernesong/OpenClash/branches/master/luci-app-openclash package/new/luci-app-openclash
 #SeverChan
